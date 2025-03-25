@@ -1,0 +1,73 @@
+        {/* UI/UX Design Section */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-normal font-outfit text-white text-center mb-4">UI/UX Design</h3>
+          <p className="text-lg text-center mb-10 max-w-3xl mx-auto text-white/80">
+            Scroll through my standout UI/UX designs—built in Figma to turn ideas into impact.
+          </p>
+          
+          {/* Desktop scroll controls - only visible on md screens and up */}
+          <div className="hidden md:flex justify-center gap-4 mb-6">
+            <button 
+              onClick={() => handleScroll('left')}
+              className="bg-[#2A2A2A] hover:bg-[#FF8C00]/20 border border-[#FF8C00]/30 p-2 rounded-full"
+              aria-label="Scroll left"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button 
+              onClick={() => handleScroll('right')}
+              className="bg-[#2A2A2A] hover:bg-[#FF8C00]/20 border border-[#FF8C00]/30 p-2 rounded-full"
+              aria-label="Scroll right"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+          
+          {/* Scrollable container - horizontal on desktop, vertical on mobile */}
+          <div 
+            id="projects-scroll-container"
+            className="flex md:overflow-x-auto overflow-y-auto md:overflow-y-hidden snap-x snap-mandatory md:flex-row flex-col gap-6 pb-4 -mx-4 px-4 md:pb-3 scrollbar-hide"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {uiProjects.map((project, index) => (
+              <div 
+                key={index} 
+                className="bg-[#2A2A2A] rounded-lg p-6 border border-[#FF8C00]/20 hover:border-[#FF8C00]/40 transition duration-300 flex-shrink-0 md:w-[350px] w-full snap-start"
+              >
+                <div className="mb-4 h-48 overflow-hidden rounded-lg bg-[#1A1A1A]/80 flex items-center justify-center">
+                  {project.illustration}
+                </div>
+                <div className="mb-2">
+                  <h3 className="text-xl font-semibold font-outfit">{project.title}</h3>
+                  <p className="text-[#FF8C00] text-sm">{project.subTitle}</p>
+                </div>
+                <p className="mb-4 text-white/80">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tools.map((tool, toolIndex) => (
+                    <span 
+                      key={toolIndex} 
+                      className="bg-[#1A1A1A] text-white/90 text-xs px-3 py-1 rounded-full border border-[#FF8C00]/10"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Mobile scroll indicator */}
+          <div className="flex md:hidden justify-center mt-6 gap-2">
+            {[...Array(Math.min(3, uiProjects.length))].map((_, i) => (
+              <div 
+                key={i} 
+                className={`h-1 rounded-full ${i === 0 ? 'w-6 bg-[#FF8C00]' : 'w-3 bg-[#FF8C00]/30'}`}
+              ></div>
+            ))}
+          </div>
+        </div>
+        

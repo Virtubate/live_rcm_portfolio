@@ -1,0 +1,534 @@
+const ProjectsSection = () => {
+  // Creating unique infographics for each UI/UX project
+  const agricultureAppIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Agriculture app concept */}
+      <g>
+        {/* Tractor */}
+        <rect x="40" y="90" width="60" height="20" rx="5" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="50" cy="110" r="10" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="90" cy="110" r="10" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <rect x="70" y="75" width="20" height="15" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        
+        {/* Smartphone */}
+        <rect x="120" y="50" width="30" height="50" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="125" y1="60" x2="145" y2="60" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="125" y1="70" x2="145" y2="70" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="125" y1="80" x2="135" y2="80" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="135" cy="95" r="3" fill="#FF8C00" />
+        
+        {/* Connection */}
+        <path d="M90 80 C100 60, 110 60, 120 75" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">AGRICULTURE SERVICES</text>
+    </svg>
+  );
+  
+  const urbanCommuteIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Urban commute concept */}
+      <g>
+        {/* Bus */}
+        <rect x="30" y="70" width="50" height="20" rx="5" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="40" cy="90" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="70" cy="90" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="35" y="75" width="10" height="8" rx="1" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="50" y="75" width="10" height="8" rx="1" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Train */}
+        <rect x="100" y="50" width="60" height="15" rx="5" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <rect x="105" y="65" width="10" height="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="125" y="65" width="10" height="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="145" y="65" width="10" height="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="100" y1="40" x2="100" y2="50" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="160" y1="40" x2="160" y2="50" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Smartphone */}
+        <rect x="80" y="90" width="25" height="40" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="85" y1="100" x2="100" y2="100" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="85" y1="110" x2="100" y2="110" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="92" cy="120" r="3" fill="#FF8C00" />
+        
+        {/* Connection lines */}
+        <path d="M55 70 C65 60, 75 85, 80 100" stroke="#FF8C00" strokeWidth="1" strokeDasharray="2,2" />
+        <path d="M130 65 C120 75, 110 85, 105 100" stroke="#FF8C00" strokeWidth="1" strokeDasharray="2,2" />
+      </g>
+      
+      <text x="100" y="135" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">URBAN TRANSPORTATION</text>
+    </svg>
+  );
+  
+  const womenEntrepreneurIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Women entrepreneur concept */}
+      <g>
+        {/* Woman figure */}
+        <circle cx="60" cy="50" r="15" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <path d="M60 65 L60 95" stroke="#FF8C00" strokeWidth="1.5" /> {/* Body */}
+        <path d="M60 70 L45 85" stroke="#FF8C00" strokeWidth="1.5" /> {/* Left arm */}
+        <path d="M60 70 L75 85" stroke="#FF8C00" strokeWidth="1.5" /> {/* Right arm */}
+        <path d="M60 95 L50 115" stroke="#FF8C00" strokeWidth="1.5" /> {/* Left leg */}
+        <path d="M60 95 L70 115" stroke="#FF8C00" strokeWidth="1.5" /> {/* Right leg */}
+        
+        {/* Growth chart */}
+        <line x1="100" y1="100" x2="100" y2="40" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="100" y1="100" x2="160" y2="100" stroke="#FF8C00" strokeWidth="1.5" />
+        <path d="M100 90 L110 85 L120 80 L130 70 L140 60 L150 40" stroke="#FF8C00" strokeWidth="2" fill="none" />
+        <circle cx="150" cy="40" r="5" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        
+        {/* Dollar sign */}
+        <path d="M127 55 C127 52, 130 52, 130 55 C130 58, 127 58, 127 61 C127 64, 130 64, 130 61" stroke="#FF8C00" strokeWidth="1.5" fill="none" />
+        <line x1="128.5" y1="52" x2="128.5" y2="64" stroke="#FF8C00" strokeWidth="1.5" />
+        
+        {/* Connection */}
+        <path d="M75 70 C85 60, 95 60, 100 80" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">WOMEN ENTREPRENEURS</text>
+    </svg>
+  );
+  
+  const inventorySystemIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Inventory system concept */}
+      <g>
+        {/* Warehouse shelves */}
+        <rect x="30" y="40" width="60" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="30" y="60" width="60" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="30" y="80" width="60" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="30" y="100" width="60" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="40" y1="40" x2="40" y2="110" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="60" y1="40" x2="60" y2="110" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="80" y1="40" x2="80" y2="110" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Boxes on shelves */}
+        <rect x="45" y="42" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="65" y="42" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="35" y="62" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="65" y="62" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="45" y="82" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="70" y="82" width="5" height="6" fill="#FF8C00" opacity="0.5" />
+        <rect x="35" y="102" width="10" height="6" fill="#FF8C00" opacity="0.5" />
+        
+        {/* Dashboard */}
+        <rect x="110" y="50" width="60" height="40" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="110" y1="60" x2="170" y2="60" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="115" y="65" width="20" height="5" fill="#FF8C00" opacity="0.3" />
+        <rect x="115" y="75" width="15" height="5" fill="#FF8C00" opacity="0.5" />
+        <rect x="140" y="65" width="25" height="20" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <path d="M140 75 L145 72 L150 80 L155 68 L160 70 L165 65" stroke="#FF8C00" strokeWidth="1" fill="none" />
+        
+        {/* Connection */}
+        <path d="M90 70 C95 70, 105 70, 110 70" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">INVENTORY MANAGEMENT</text>
+    </svg>
+  );
+  
+  const waterWorksIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Water works concept */}
+      <g>
+        {/* Water drop */}
+        <path d="M50 50 C50 30, 80 30, 80 50 C80 70, 65 80, 65 80 C65 80, 50 70, 50 50 Z" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <path d="M60 45 C60 45, 65 50, 70 45" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Pipes */}
+        <path d="M30 100 L50 100 L50 90 L90 90 L90 100 L170 100" stroke="#FF8C00" strokeWidth="1.5" fill="none" />
+        <circle cx="70" cy="90" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="70" y1="85" x2="70" y2="95" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Feedback form */}
+        <rect x="110" y="40" width="40" height="50" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="115" y1="50" x2="145" y2="50" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="115" y1="60" x2="145" y2="60" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="115" y1="70" x2="145" y2="70" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="115" y="80" width="10" height="5" rx="2" fill="#FF8C00" opacity="0.5" />
+        
+        {/* Rating stars */}
+        <g transform="translate(160, 55)">
+          <polygon points="0,0 2,5 7,5 3,8 5,13 0,10 -5,13 -3,8 -7,5 -2,5" fill="#FF8C00" opacity="0.8" />
+        </g>
+        <g transform="translate(160, 70)">
+          <polygon points="0,0 2,5 7,5 3,8 5,13 0,10 -5,13 -3,8 -7,5 -2,5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        </g>
+        
+        {/* Connection */}
+        <path d="M80 70 C95 70, 105 65, 110 65" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">WATER WORKS FEEDBACK</text>
+    </svg>
+  );
+  
+  const droneServiceIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Drone service concept */}
+      <g>
+        {/* Drone */}
+        <rect x="45" y="50" width="30" height="10" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="50" cy="45" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="70" cy="45" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="50" cy="65" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="70" cy="65" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="50" y1="40" x2="50" y2="50" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="70" y1="40" x2="70" y2="50" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="50" y1="60" x2="50" y2="70" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="70" y1="60" x2="70" y2="70" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Flight path */}
+        <path d="M80 55 C100 35, 120 75, 140 55" stroke="#FF8C00" strokeWidth="1.5" fill="none" strokeDasharray="4,2" />
+        <circle cx="100" cy="45" r="3" fill="#FF8C00" opacity="0.5" />
+        <circle cx="120" cy="65" r="3" fill="#FF8C00" opacity="0.5" />
+        
+        {/* Control panel */}
+        <rect x="110" y="80" width="50" height="30" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="125" cy="95" r="5" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="140" y1="90" x2="150" y2="90" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="140" y1="95" x2="150" y2="95" stroke="#FF8C00" strokeWidth="1" />
+        <line x1="140" y1="100" x2="150" y2="100" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Connection */}
+        <path d="M60 70 C70 80, 90 90, 110 95" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">DRONE SERVICE PLATFORM</text>
+    </svg>
+  );
+
+  // Technical projects with unique illustrations
+  const aiAutomationIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* AI Automation concept */}
+      <g>
+        {/* Robot/AI head */}
+        <rect x="50" y="40" width="40" height="30" rx="5" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <circle cx="60" cy="50" r="3" fill="#FF8C00" opacity="0.8" />
+        <circle cx="80" cy="50" r="3" fill="#FF8C00" opacity="0.8" />
+        <rect x="60" y="60" width="20" height="3" fill="#FF8C00" opacity="0.6" />
+        <rect x="45" y="50" width="5" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="90" y="50" width="5" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Workflow automation */}
+        <rect x="110" y="40" width="60" height="40" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <path d="M120 50 L160 50" stroke="#FF8C00" strokeWidth="1" strokeDasharray="4,2" />
+        <path d="M120 60 L160 60" stroke="#FF8C00" strokeWidth="1" strokeDasharray="4,2" />
+        <path d="M120 70 L160 70" stroke="#FF8C00" strokeWidth="1" strokeDasharray="4,2" />
+        <circle cx="120" cy="50" r="3" fill="#FF8C00" />
+        <circle cx="140" cy="50" r="3" fill="#FF8C00" />
+        <circle cx="160" cy="50" r="3" fill="#FF8C00" />
+        <circle cx="120" cy="60" r="3" fill="#FF8C00" />
+        <circle cx="140" cy="60" r="3" fill="#FF8C00" />
+        <circle cx="160" cy="60" r="3" fill="#FF8C00" />
+        <circle cx="120" cy="70" r="3" fill="#FF8C00" />
+        <circle cx="140" cy="70" r="3" fill="#FF8C00" />
+        <circle cx="160" cy="70" r="3" fill="#FF8C00" />
+        
+        {/* Business results */}
+        <rect x="40" y="90" width="120" height="20" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <text x="60" y="105" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">BEFORE</text>
+        <text x="140" y="105" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">AFTER</text>
+        <line x1="100" y1="90" x2="100" y2="110" stroke="#FF8C00" strokeWidth="1" strokeDasharray="2,2" />
+        <path d="M70 105 L90 105" stroke="#FF8C00" strokeWidth="3" />
+        <path d="M110 105 L170 105" stroke="#FF8C00" strokeWidth="3" />
+        
+        {/* Connection */}
+        <path d="M90 55 C100 55, 100 55, 110 55" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+        <path d="M140 80 C140 85, 140 85, 140 90" stroke="#FF8C00" strokeWidth="1" strokeDasharray="3,2" />
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">AI AUTOMATION AGENT</text>
+    </svg>
+  );
+  
+  const marketModelIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Market adoption model concept */}
+      <g>
+        {/* Coordinate system */}
+        <line x1="40" y1="110" x2="170" y2="110" stroke="#FF8C00" strokeWidth="1.5" /> {/* x-axis */}
+        <line x1="40" y1="30" x2="40" y2="110" stroke="#FF8C00" strokeWidth="1.5" /> {/* y-axis */}
+        <text x="170" y="120" fontSize="8" fill="#FF8C00" fontWeight="normal">TIME</text>
+        <text x="30" y="30" fontSize="8" fill="#FF8C00" fontWeight="normal">ADOPTION</text>
+        
+        {/* S-curve for Bass diffusion model */}
+        <path d="M40 110 Q55 110, 70 105 Q85 100, 100 80 Q115 60, 130 40 Q145 20, 160 30" 
+              stroke="#FF8C00" strokeWidth="2" fill="none" />
+        
+        {/* Data points */}
+        <circle cx="70" cy="105" r="3" fill="#FF8C00" />
+        <circle cx="85" cy="95" r="3" fill="#FF8C00" />
+        <circle cx="100" cy="80" r="3" fill="#FF8C00" />
+        <circle cx="115" cy="60" r="3" fill="#FF8C00" />
+        <circle cx="130" cy="40" r="3" fill="#FF8C00" />
+        <circle cx="145" cy="35" r="3" fill="#FF8C00" />
+        <circle cx="160" cy="30" r="3" fill="#FF8C00" />
+        
+        {/* Python script elements */}
+        <g transform="translate(50, 40)">
+          <rect width="30" height="15" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+          <text x="15" y="10" fontSize="7" fill="#FF8C00" textAnchor="middle" fontWeight="normal">PYTHON</text>
+        </g>
+        
+        {/* Accuracy indicator */}
+        <g transform="translate(160, 60)">
+          <circle r="15" fill="none" stroke="#FF8C00" strokeWidth="1" />
+          <text x="0" y="0" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">72%</text>
+          <text x="0" y="10" fontSize="6" fill="#FF8C00" textAnchor="middle" fontWeight="normal">ACCURACY</text>
+        </g>
+      </g>
+      
+      <text x="100" y="130" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">MARKET ADOPTION MODEL</text>
+    </svg>
+  );
+  
+  const aiAnalyticsIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* AI Analytics concept */}
+      <g>
+        {/* Dashboard */}
+        <rect x="30" y="30" width="140" height="70" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        <line x1="30" y1="45" x2="170" y2="45" stroke="#FF8C00" strokeWidth="1" />
+        <text x="40" y="40" fontSize="8" fill="#FF8C00" fontWeight="normal">HYPERSPACE ANALYTICS</text>
+        
+        {/* Charts and data visualization */}
+        <rect x="40" y="55" width="35" height="35" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <path d="M45 80 L55 65 L65 75 L70 60" stroke="#FF8C00" strokeWidth="1.5" fill="none" />
+        
+        <rect x="85" y="55" width="35" height="35" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <circle cx="102" cy="72" r="15" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <path d="M102 72 L102 57" stroke="#FF8C00" strokeWidth="1.5" />
+        <path d="M102 72 L112 77" stroke="#FF8C00" strokeWidth="1.5" />
+        
+        <rect x="130" y="55" width="30" height="35" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="135" y="65" width="5" height="20" fill="#FF8C00" opacity="0.3" />
+        <rect x="142" y="60" width="5" height="25" fill="#FF8C00" opacity="0.5" />
+        <rect x="150" y="70" width="5" height="15" fill="#FF8C00" opacity="0.7" />
+        
+        {/* AI Brain */}
+        <g transform="translate(60, 110)">
+          <path d="M0 0 C-10 -5, -10 -15, 0 -20 C10 -15, 10 -5, 0 0" fill="none" stroke="#FF8C00" strokeWidth="1" />
+          <path d="M-8 -10 C-3 -15, 3 -15, 8 -10" stroke="#FF8C00" strokeWidth="1" fill="none" />
+          <path d="M-5 -5 C-2 -7, 2 -7, 5 -5" stroke="#FF8C00" strokeWidth="1" fill="none" />
+        </g>
+        
+        {/* Budget allocation improvement */}
+        <g transform="translate(130, 110)">
+          <rect width="40" height="15" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+          <text x="20" y="10" fontSize="8" fill="#FF8C00" textAnchor="middle" fontWeight="normal">+30% ROI</text>
+        </g>
+        
+        {/* Connection */}
+        <path d="M60 90 C60 95, 60 100, 60 110" stroke="#FF8C00" strokeWidth="1" strokeDasharray="2,2" />
+        <path d="M100 90 C100 95, 120 100, 130 110" stroke="#FF8C00" strokeWidth="1" strokeDasharray="2,2" />
+      </g>
+      
+      <text x="100" y="135" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">AI ANALYTICS PLATFORM</text>
+    </svg>
+  );
+
+  // UI/UX Design Projects with unique illustrations
+  const uiProjects = [
+    {
+      title: "Agriculture Machinery Services App",
+      subTitle: "Krishiyantra",
+      description: "Streamlined farming equipment access with intuitive UI/UX. Boosted rural efficiency.",
+      tools: ["Figma"],
+      illustration: agricultureAppIllustration
+    },
+    {
+      title: "Multi-Modal Urban Commute Application",
+      subTitle: "Reki USA",
+      description: "Integrated transport modes into a sleek, real-time app. Cut commute chaos.",
+      tools: ["Figma"],
+      illustration: urbanCommuteIllustration
+    },
+    {
+      title: "Women Entrepreneur Management System",
+      subTitle: "Udyamika",
+      description: "Empowered women-led startups with scalable UX. Tied to my $875K funding wins.",
+      tools: ["Figma"],
+      illustration: womenEntrepreneurIllustration
+    },
+    {
+      title: "End-to-End Inventory Management System",
+      subTitle: "TheUnityWare",
+      description: "Optimized inventory with a data-driven design. Echoes my 60% efficiency boost.",
+      tools: ["Figma"],
+      illustration: inventorySystemIllustration
+    },
+    {
+      title: "Urban Water-Works Feedback Collection App",
+      subTitle: "HMWSSB",
+      description: "Bridged feedback and action with simple, effective UX. Drove engagement.",
+      tools: ["Figma"],
+      illustration: waterWorksIllustration
+    },
+    {
+      title: "Drone Service Management Platform",
+      subTitle: "Asthra",
+      description: "Managed drone ops with a futuristic UI. Balanced complexity and usability.",
+      tools: ["Figma"],
+      illustration: droneServiceIllustration
+    }
+  ];
+  
+  // Portfolio website illustration
+  const portfolioWebsiteIllustration = (
+    <svg width="100%" height="100%" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="150" fill="#1A1A1A" />
+      
+      {/* Portfolio website concept with gridlines pattern */}
+      <g>
+        {/* Monitor/device */}
+        <rect x="40" y="30" width="120" height="70" rx="3" fill="none" stroke="#FF8C00" strokeWidth="1.5" />
+        
+        {/* Website with grid pattern matching portfolio design */}
+        <pattern id="miniGrid" width="15" height="15" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="0" x2="15" y2="0" stroke="#FF8C00" strokeWidth="0.2" opacity="0.3" />
+          <line x1="0" y1="0" x2="0" y2="15" stroke="#FF8C00" strokeWidth="0.2" opacity="0.3" />
+        </pattern>
+        <rect x="45" y="35" width="110" height="55" fill="url(#miniGrid)" stroke="#FF8C00" strokeWidth="0.5" />
+        
+        {/* Stand */}
+        <rect x="90" y="100" width="20" height="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        <rect x="80" y="110" width="40" height="5" rx="2" fill="none" stroke="#FF8C00" strokeWidth="1" />
+        
+        {/* Website layout on screen resembling current portfolio */}
+        {/* Navigation bar */}
+        <rect x="45" y="35" width="110" height="10" rx="0" fill="#222" stroke="#FF8C00" strokeWidth="0.3" />
+        <circle cx="50" cy="40" r="2" fill="#FF8C00" opacity="0.8" />
+        <line x1="60" y1="40" x2="75" y2="40" stroke="#FF8C00" strokeWidth="0.5" />
+        <line x1="85" y1="40" x2="95" y2="40" stroke="#FF8C00" strokeWidth="0.5" />
+        <line x1="105" y1="40" x2="115" y2="40" stroke="#FF8C00" strokeWidth="0.5" />
+        <line x1="125" y1="40" x2="140" y2="40" stroke="#FF8C00" strokeWidth="0.5" />
+        
+        {/* Skills section with scrolling animation hint */}
+        <g>
+          <rect x="55" y="60" width="90" height="10" rx="3" fill="#222" stroke="#FF8C00" strokeWidth="0.3" />
+          <circle cx="65" cy="65" r="2" fill="#FF8C00" opacity="0.6" />
+          <circle cx="75" cy="65" r="2" fill="#FF8C00" opacity="0.6" />
+          <circle cx="85" cy="65" r="2" fill="#FF8C00" opacity="0.6" />
+          <line x1="95" y1="65" x2="120" y2="65" stroke="#FF8C00" strokeWidth="0.5" strokeDasharray="1,1">
+            <animate attributeName="x1" values="95;105;95" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="x2" values="120;130;120" dur="3s" repeatCount="indefinite" />
+          </line>
+        </g>
+        
+        {/* Projects section */}
+        <rect x="55" y="75" width="90" height="10" rx="3" fill="#222" stroke="#FF8C00" strokeWidth="0.3" />
+        <rect x="60" y="77" width="15" height="6" rx="1" fill="none" stroke="#FF8C00" strokeWidth="0.3" />
+        <rect x="80" y="77" width="15" height="6" rx="1" fill="none" stroke="#FF8C00" strokeWidth="0.3" />
+        <rect x="100" y="77" width="15" height="6" rx="1" fill="none" stroke="#FF8C00" strokeWidth="0.3" />
+        <rect x="120" y="77" width="15" height="6" rx="1" fill="none" stroke="#FF8C00" strokeWidth="0.3" />
+        
+        {/* Creative person */}
+        <g transform="translate(30, 60)">
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#FF8C00" strokeWidth="0.8" />
+          <circle cx="-2" cy="-2" r="1" fill="#FF8C00" /> {/* Eye */}
+          <circle cx="2" cy="-2" r="1" fill="#FF8C00" /> {/* Eye */}
+          <path d="M-2 2 C-1 4, 1 4, 2 2" stroke="#FF8C00" strokeWidth="0.8" fill="none" /> {/* Smile */}
+          <path d="M0 -8 C3 -10, 5 -8, 5 -5" stroke="#FF8C00" strokeWidth="0.5" fill="none" /> {/* Idea */}
+          <circle cx="5" cy="-5" r="2" fill="none" stroke="#FF8C00" strokeWidth="0.5" />
+        </g>
+        
+        {/* Clock showing fast delivery */}
+        <g transform="translate(160, 60)">
+          <circle r="10" fill="none" stroke="#FF8C00" strokeWidth="1" />
+          <line x1="0" y1="0" x2="0" y2="-6" stroke="#FF8C00" strokeWidth="1" />
+          <line x1="0" y1="0" x2="4" y2="0" stroke="#FF8C00" strokeWidth="1" />
+          <text x="0" y="15" fontSize="6" fill="#FF8C00" textAnchor="middle" fontWeight="normal">2HR BUILD</text>
+        </g>
+        
+        {/* Front-end technologies */}
+        <g transform="translate(30, 85)">
+          <text x="0" y="0" fontSize="6" fill="#FF8C00">React</text>
+          <text x="0" y="8" fontSize="6" fill="#FF8C00">Tailwind</text>
+        </g>
+      </g>
+      
+      <text x="100" y="135" fontSize="10" fill="#FF8C00" textAnchor="middle" fontWeight="normal">PORTFOLIO WEBSITE</text>
+    </svg>
+  );
+
+  // Technical projects with unique illustrations
+  const techProjects = [
+    {
+      title: "AI-Powered Business Automation Agent",
+      subTitle: "E-commerce Workflow",
+      description: "Engineered an AI-driven workflow using n8n and OpenAI to automate customer support, lead qualification, and logistics.",
+      result: "Slashed inefficiencies by 60% for a solo e-commerce business.",
+      tools: ["n8n", "OpenAI GPT-3"],
+      illustration: aiAutomationIllustration
+    },
+    {
+      title: "Predictive Market Adoption Model",
+      subTitle: "Data Science Tool",
+      description: "Developed a Python tool leveraging Bass Model and Roger's Diffusion Theory to forecast market adoption and costs.",
+      result: "Achieved 72% accuracy on FMCG data.",
+      tools: ["Python", "NumPy", "SciPy", "Tableau"],
+      illustration: marketModelIllustration
+    },
+    {
+      title: "hyperspace AI Analytics MVP",
+      subTitle: "E-commerce Analytics",
+      description: "Built an AI-based analytics platform consolidating e-commerce sales and marketing data for D2C brands.",
+      result: "Improved ad budget allocation by 30% across 3 pilots.",
+      tools: ["Python", "Tableau"],
+      illustration: aiAnalyticsIllustration
+    },
+    {
+      title: "Portfolio Website (Self-Built)",
+      subTitle: "Web Development",
+      description: "Turned a vision into a functional site in 2 hours using Replit and Grok's AI prompts. Coded a sleek, scrollable portfolio to showcase my work—proof I can innovate fast at the tech-business nexus.",
+      result: "Delivered complete site in under 2 hours.",
+      tools: ["Replit", "Grok", "HTML/CSS/JS"],
+      illustration: portfolioWebsiteIllustration
+    }
+  ];
+
+  // Add scroll indicator animations
+  const handleScroll = (direction: 'left' | 'right') => {
+    const container = document.getElementById('projects-scroll-container');
+    if (container) {
+      const scrollAmount = direction === 'right' ? 400 : -400;
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="projects" className="py-20 bg-[#1A1A1A] relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <rect width="50" height="50" fill="none" stroke="#FF8C00" strokeWidth="0.5" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-4xl font-normal font-outfit text-[#FF8C00] text-center mb-2">Projects</h2>
+        <p className="text-xl text-center mb-4 text-white/90">Driven to Solve Real-World Challenges with Tech</p>
+        
